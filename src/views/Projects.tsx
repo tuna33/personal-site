@@ -17,7 +17,7 @@ export const Projects: React.FC = () => {
     {
       title: "Random Magic Deck",
       url: "https://ragic.vercel.app/",
-      desc: "A minigame to form a random deck based on Magic The Gathering",
+      desc: "A minigame to form a random card deck based on Magic The Gathering",
       tech: ["Figma", "React", "Javascript", "Styled Components", "Webpack"],
       challenge:
         "Designing a simple interface on Figma and implementing it from scratch",
