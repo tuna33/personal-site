@@ -94,7 +94,7 @@ export const Home: React.FC = () => {
   ];
 
   return (
-    <Flex h="60vh" flexDir="column" justify="flex-start" align="center">
+    <Flex flexDir="column" justify="flex-start" align="center">
       <Text marginBottom="40px">
         I am a software engineer that enjoys using technology as a tool to
         enhance the lives and experiences of everyone.
