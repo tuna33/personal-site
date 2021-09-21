@@ -2,8 +2,9 @@ import React from "react";
 import { Home } from "../views/Home";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Projects } from "../views/Projects";
-import { ChakraProvider, VStack, Heading } from "@chakra-ui/react";
+import { ChakraProvider, VStack, Heading, Text } from "@chakra-ui/react";
 import { NavBar } from "./Navbar";
+import { SocialLinks } from "./SocialLinks";
 import { Endpoint } from "../types";
 
 export const App: React.FC = () => {
@@ -20,7 +21,7 @@ export const App: React.FC = () => {
   return (
     <ChakraProvider>
       <BrowserRouter>
-        <VStack m="10vh 10vw" justifyContent="center" alignItems="center">
+        <VStack m="10vh 10vw" h="80vh" justify="space-between">
           <header>
             <Heading size="xl" fontFamily="fantasy">
               Matias Lago Evia
@@ -28,6 +29,12 @@ export const App: React.FC = () => {
             <NavBar endpoints={endpoints} />
           </header>
           <Switch>{switchContent}</Switch>
+          <footer>
+            <SocialLinks />
+            <Text fontSize="xs">
+              Want to reach out? Use any of these to do so!
+            </Text>
+          </footer>
         </VStack>
       </BrowserRouter>
     </ChakraProvider>
